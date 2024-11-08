@@ -1,0 +1,44 @@
+{
+  "cuchillos": [
+    {
+      "id": "92f1",
+      "nombre": "Luciano",
+      "tipo": "Chef",
+      "tipoFilo": "Dentado",
+      "materialHoja": "Ceramica",
+      "materialMango": "Hueso",
+      "longitudHoja": 0,
+      "longitudTotal": 0
+    },
+    {
+      "id": "2127",
+      "nombre": "Luciano",
+      "tipo": "Chef",
+      "tipoFilo": "Dentado",
+      "materialHoja": "Ceramica",
+      "materialMango": "Hueso",
+      "longitudHoja": 0,
+      "longitudTotal": 0
+    },
+    {
+      "nombre": "Luciano",
+      "tipo": "Chef",
+      "tipoFilo": "Dentado",
+      "materialHoja": "Ceramica",
+      "materialMango": "Hueso",
+      "longitudHoja": 2,
+      "longitudTotal": 0,
+      "id": "68d3"
+    },
+    {
+      "id": "a879",
+      "nombre": "Luciano",
+      "tipo": "Chef",
+      "tipoFilo": "Dentado",
+      "materialHoja": "Ceramica",
+      "materialMango": "Hueso",
+      "longitudHoja": 0,
+      "longitudTotal": 0
+    }
+  ]
+}

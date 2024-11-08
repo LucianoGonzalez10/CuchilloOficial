@@ -1,0 +1,62 @@
+<form [formGroup]="formulario" (ngSubmit)="modificarCuchillo()">
+
+    <label for=""> Nombre: </label>
+    <input type="text" formControlName="nombre">
+    @if (formulario.controls['nombre'].getError('required') && formulario.controls['nombre'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <label for=""> Tipo de cuchillo : </label>
+    <select formControlName="tipo">
+        <option value=""> Seleccione un tipo de cuchillo </option>
+        <option value="Chef">Chef</option>
+        <option value="Santoku">Santoku</option>
+        <option value="Pan">Pan</option>¿
+    </select>
+    @if (formulario.controls['tipo'].getError('required') && formulario.controls['tipo'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <label for=""> Tipo de filo: </label>
+    <select formControlName="tipoFilo">
+        <option value=""> Seleccione un tipo de filo </option>
+        <option value="Dentado">Dentado</option>
+        <option value="Liso">Liso</option>
+    </select>
+    @if (formulario.controls['tipoFilo'].getError('required') && formulario.controls['tipoFilo'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <label for=""> Material hoja: </label>
+    <select formControlName="materialHoja">
+        <option value=""> Seleccione el material de la hoja </option>
+        <option value="Acero"> Acero </option>
+        <option value="Ceramica"> Ceramica </option>
++    </select>
+    @if (formulario.controls['materialHoja'].getError('required') && formulario.controls['materialHoja'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <label for=""> Material Mango: </label>
+    <select formControlName="materialMango">
+        <option value=""> Seleccione un tipo de mango </option>
+        <option value="Hueso">Hueso</option>
+        <option value="Madera">Madera</option>
+    </select>
+    @if (formulario.controls['materialMango'].getError('required') && formulario.controls['materialMango'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <input type="number" formControlName="longitudHoja">
+    @if (formulario.controls['longitudHoja'].getError('required') && formulario.controls['longitudHoja'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <input type="number" formControlName="longitudTotal">
+    @if (formulario.controls['longitudTotal'].getError('required') && formulario.controls['longitudTotal'].touched) {
+        <p> El campo es requerido. </p>
+    }
+
+    <button routerLink="/ver-cuchillos"> Volver a la lista</button>
+    <button> Modificar cuchillo </button>
+</form>
